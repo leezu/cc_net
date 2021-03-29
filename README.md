@@ -40,7 +40,7 @@ The `Makefile` is used to train Sentence Piece and LM on Wikipedia data.
 * `make lang=de lm` trains a Sentence Piece and a LM on German Wikipedia
 * `make all_lm` trains the same model than in the paper
 * `make lang=de dl_lm` downloads the LM trained for the paper
-* `make dl_all_lm` downloads all of them
+* `make dl_all_lms` downloads all of them
 
 ## Pipeline overview
 
@@ -68,7 +68,7 @@ Given the CPU required to run the full pipeline on such a big corpus we share a 
 You can reconstruct the corpus used in the paper by using:
 
 ```sh
-python -m cc_net --conf reproduce --dump 2019-09
+python -m cc_net --config reproduce --dump 2019-09
 ```
 
 ## Extract XLM-R data
